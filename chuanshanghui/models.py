@@ -20,7 +20,7 @@ class People(models.Model):
     stu_college = models.CharField(max_length=30)
 
     def __str__(self):
-        return self.stu_qq
+        return self.stu_sex
 
 
 class Department(models.Model):
