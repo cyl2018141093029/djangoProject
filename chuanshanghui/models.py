@@ -19,6 +19,9 @@ class People(models.Model):
     stu_class = models.IntegerField()
     stu_college = models.CharField(max_length=30)
 
+    def __str__(self):
+        return self.stu_qq
+
 
 class Department(models.Model):
     # 部门
