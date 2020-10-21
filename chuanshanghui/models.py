@@ -28,7 +28,7 @@ class Department(models.Model):
     dp_num = models.CharField(max_length=2, primary_key=True)
     dp_name = models.CharField(max_length=10)
     dp_presentetion = models.CharField(max_length=500)
-
+ 
 
 class ActivityInfo(models.Model):
     # 活动信息
@@ -172,6 +172,6 @@ class Cooperation(models.Model):
     ddl = models.DateTimeField()
     task_details = models.CharField(max_length=200)
     task_note = models.CharField(max_length=200)
-    aappendix = models.FileField(upload_to="Cooperation/a_Cooperation")
-    bappendix = models.FileField(upload_to="Cooperation/b_Cooperation")
+    aappendix = models.FileField(upload_to="a_Cooperation")
+    bappendix = models.FileField(upload_to="b_Cooperation")
     task_state = models.CharField(max_length=6)
