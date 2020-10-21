@@ -19,8 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="删除所有文件">
+    <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="ceshi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/models.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,7 +87,32 @@
       <workItem from="1603181825573" duration="6000" />
       <workItem from="1603181832996" duration="59000" />
       <workItem from="1603181899469" duration="64000" />
+      <workItem from="1603182927757" duration="18000" />
+      <workItem from="1603182947202" duration="1267000" />
+      <workItem from="1603269928556" duration="326000" />
     </task>
+    <task id="LOCAL-00001" summary="ceshi">
+      <created>1603183049002</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1603183049002</updated>
+    </task>
+    <task id="LOCAL-00002" summary="ceshi">
+      <created>1603183148931</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1603183148931</updated>
+    </task>
+    <task id="LOCAL-00003" summary="ceshi">
+      <created>1603183301442</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1603183301442</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -106,17 +132,30 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除所有文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="删除所有文件" />
+    <MESSAGE value="ceshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="ceshi" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603181830146">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603182943654">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603181830146" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603182943654" />
+    <state x="242" y="100" key="MergeDialog" timestamp="1603183286110">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="242" y="100" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1603183286110" />
+    <state x="94" y="201" key="MultipleFileMergeDialog" timestamp="1603183286110">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="94" y="201" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1603183286110" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1603181891777">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603181891777" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1603183303078">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603183303078" />
     <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603181849743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
