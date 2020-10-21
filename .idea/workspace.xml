@@ -102,6 +102,7 @@
       <workItem from="1603196549960" duration="119000" />
       <workItem from="1603199132362" duration="1752000" />
       <workItem from="1603270396772" duration="1156000" />
+      <workItem from="1603272536487" duration="513000" />
     </task>
     <task id="LOCAL-00001" summary="People类添加__Str__函数">
       <created>1603182624618</created>
@@ -152,15 +153,19 @@
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603181891777" />
     <state x="170" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1603184201016" />
+    <state x="616" y="141" key="VCS.ChangeListViewerDialog" timestamp="1603273028152">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="616" y="141" key="VCS.ChangeListViewerDialog/0.0.1536.824@0.0.1536.824" timestamp="1603273028152" />
     <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603183131473">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603183131473" />
-    <state x="539" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603183327300">
+    <state x="539" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603273003453">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1603181849743" />
-    <state x="539" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1603183327300" />
+    <state x="539" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1603273003453" />
     <state x="522" y="311" key="git4idea.remote.GitConfigureRemotesDialog" timestamp="1603183772748">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
