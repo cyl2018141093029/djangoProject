@@ -81,7 +81,7 @@ class FundRecord(models.Model):
     # 资金用于的活动编号
     fund_for_act = models.ForeignKey(to='ActivityInfo', to_field='act_num', on_delete=models.PROTECT)
     # 资金预使用事项
-    fund_for_matt = models.IntegerField()
+    fund_for_matt = models.CharField(max_length=500)
     # 资金数目
     fund_amount = models.FloatField(blank=True, null=True)
     # 报账编号
