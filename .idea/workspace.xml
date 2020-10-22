@@ -19,14 +19,28 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="ceshi">
+    <list default="true" id="d4ab15b1-e167-40bc-b534-f1c23cbb563b" name="Default Changelist" comment="删除所有文件">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/models.py" afterDir="false" />
     </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
   </component>
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
@@ -41,6 +55,9 @@
   </component>
   <component name="JupyterTrust" id="ba5c8377-fd34-4ca1-998c-cb81991a3599" />
   <component name="ProjectId" id="1j8MFkjbWoLOr9v4gOFO5Y8684Z" />
+  <component name="ProjectLevelVcsManager">
+    <OptionsSetting value="false" id="Update" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -48,8 +65,20 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/djangoProject" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
   </component>
   <component name="RunManager">
     <configuration name="djangoProject" type="Python.DjangoServer" factoryName="Django server">
@@ -76,10 +105,13 @@
       <method v="2" />
     </configuration>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SpellCheckerSettings" BundledDictionaries="0" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" Dictionaries="0" CorrectionsLimit="5" DefaultDictionary="application-level" UseSingleDictionary="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="删除所有文件" />
+      <changelist id="d4ab15b1-e167-40bc-b534-f1c23cbb563b" name="Default Changelist" comment="" />
       <created>1603181823852</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -87,75 +119,40 @@
       <workItem from="1603181825573" duration="6000" />
       <workItem from="1603181832996" duration="59000" />
       <workItem from="1603181899469" duration="64000" />
-      <workItem from="1603182927757" duration="18000" />
-      <workItem from="1603182947202" duration="1267000" />
-      <workItem from="1603269928556" duration="326000" />
+      <workItem from="1603266226388" duration="279000" />
+      <workItem from="1603285132419" duration="605000" />
     </task>
-    <task id="LOCAL-00001" summary="ceshi">
-      <created>1603183049002</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1603183049002</updated>
-    </task>
-    <task id="LOCAL-00002" summary="ceshi">
-      <created>1603183148931</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1603183148931</updated>
-    </task>
-    <task id="LOCAL-00003" summary="ceshi">
-      <created>1603183301442</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1603183301442</updated>
-    </task>
-    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
+    <option name="version" value="1" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
-    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除所有文件" />
-    <MESSAGE value="ceshi" />
-    <option name="LAST_COMMIT_MESSAGE" value="ceshi" />
+    <option name="LAST_COMMIT_MESSAGE" value="删除所有文件" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603182943654">
+    <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603181830146">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
-    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603182943654" />
-    <state x="242" y="100" key="MergeDialog" timestamp="1603183286110">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="242" y="100" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1603183286110" />
-    <state x="94" y="201" key="MultipleFileMergeDialog" timestamp="1603183286110">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="94" y="201" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1603183286110" />
+    <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603181830146" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1603181891777">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603181891777" />
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1603183303078">
-      <screen x="0" y="0" width="1280" height="680" />
-    </state>
-    <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603183303078" />
     <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603181849743">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
