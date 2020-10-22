@@ -21,7 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="ceshi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +40,9 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="ba5c8377-fd34-4ca1-998c-cb81991a3599" />
+  <component name="JupyterTrust" id="65825dcc-b38e-4014-b349-c924e28a5080" />
   <component name="ProjectId" id="1j8MFkjbWoLOr9v4gOFO5Y8684Z" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -49,7 +51,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
   </component>
   <component name="RunManager">
     <configuration name="djangoProject" type="Python.DjangoServer" factoryName="Django server">
@@ -90,6 +92,11 @@
       <workItem from="1603182927757" duration="18000" />
       <workItem from="1603182947202" duration="1267000" />
       <workItem from="1603269928556" duration="326000" />
+      <workItem from="1603297999992" duration="34000" />
+      <workItem from="1603298051023" duration="767000" />
+      <workItem from="1603326773671" duration="4003000" />
+      <workItem from="1603366273978" duration="5073000" />
+      <workItem from="1603371702016" duration="1597000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1603183049002</created>
@@ -136,6 +143,10 @@
     <option name="LAST_COMMIT_MESSAGE" value="ceshi" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="233" y="0" key="#Plugins" timestamp="1603298147528">
+      <screen x="0" y="0" width="1280" height="689" />
+    </state>
+    <state x="233" y="0" key="#Plugins/0.0.1280.689@0.0.1280.689" timestamp="1603298147528" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603182943654">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -148,10 +159,11 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="94" y="201" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1603183286110" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1603181891777">
-      <screen x="0" y="0" width="1280" height="680" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1603369921280">
+      <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603181891777" />
+    <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1603369921280" />
     <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1603183303078">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
