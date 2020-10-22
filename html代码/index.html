@@ -1,0 +1,174 @@
+﻿<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="renderer" content="webkit|ie-comp|ie-stand">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+	<link rel="Icon" href="static/h-ui/images/logo.jpg" />
+	<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.css" />
+	<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
+	<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
+
+	<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
+	<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+
+	<script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
+	<!--/meta 作为公共模版分离出去-->
+
+	<title>学生会管理信息系统</title>
+	<meta name="keywords" content="川上会 学生会管理新系统">
+	<meta name="description" content="针对四川大学公共管理学院团委学生会设计并开发的管理信息系统">
+</head>
+<body>
+<!--_header 作为公共模版分离出去-->
+<header class="navbar-wrapper">
+	<div class="navbar navbar-fixed-top">
+		<div class="container-fluid cl">
+			<a class="logo navbar-logo f-l mr-10" href="index.html"><img src="static/h-ui/images/logo.jpg"> 川上会</a>
+			<!--上方，系统logo，需不需要链接？登录页还是首页-->
+			<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
+				<ul class="cl">
+					<li class="dropDown dropDown_hover"> <a href="#" class="dropDown_A"><img src="" alt="用户头像"></a><!--用户头像，来自于后台-->
+						<ul class="dropDown-menu menu radius box-shadow">
+							<li><a href="">个人信息</a></li><!--跳转至个人信息页-->
+							<li><a href="#">切换账户</a></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+					</li>
+					<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe62f;</i></a> </li>
+					<li> <a href="login.html" title="返回登陆页"><i class="Hui-iconfont" style="font-size:18px">&#xe6f7;</i></a> </li><!--返回登陆页-->
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!--/_header 作为公共模版分离出去-->
+
+<!--_menu 作为公共模版分离出去-->
+<aside class="Hui-aside">
+	<div class="menu_dropdown bk_2">
+		<dl id="menu-department">
+			<dt><i class="Hui-iconfont">&#xe613;</i> 部门管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="部门管理">部门管理</a></li>
+					<li><a href="" title="部门成员管理">部门成员管理</a></li>
+					<li><a href="" title="权限管理">权限管理</a> </li><!--参考管理员管理部分页面-->
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 活动管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="活动材料">活动材料</a></li>
+					<li><a href="" title="文案管理">文案管理</a></li>
+
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="article-list.html" title="资讯管理">资讯管理</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-finance">
+			<dt><i class="Hui-iconfont">&#xe63a;</i> 资金管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="资金审核">资金审核</a></li><!--具体页面待写-->
+					<li><a href="" title="报账申请">报账申请</a> </li><!--具体页面待写-->
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-place">
+			<dt><i class="Hui-iconfont">&#xe643;</i> 场地管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="场地审核">场地审核</a></li><!--具体页面待写-->
+					<li><a href="" title="场地申请">场地申请</a> </li><!--具体页面待写-->
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-item">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 物资管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="物资审核">物资审核</a></li><!--具体页面待写-->
+					<li><a href="" title="物资申请">物资申请</a> </li><!--具体页面待写-->
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-duty">
+			<dt><i class="Hui-iconfont">&#xe622;</i> 部门对接<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="接收任务">接受任务</a></li>
+					<li><a href="" title="发布任务">发布任务</a></li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+</aside>
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+<!--/_menu 作为公共模版分离出去-->
+
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> <a href="index.html" class="maincolor">首页</a></nav>
+	<div class="Hui-article">
+		<div class="newsbox">
+			<p class="newsbox_title1">活动资讯</p>
+			<ul title="活动资讯" class="newsbox_ul">
+				<li><a>创就智能秘书程序设计大赛</a><span class="time ">2020-01-01</span></li><!--title time department-->
+				<li><a>外联摄影大赛</a><span class="time">2020-02-02</span></li>
+				<li><a>组织团校</a><span class="time">2020-03-03</span></li>
+				<li><a>朝阳青志明远行动</a><span class="time">2020-04-04</span></li>
+				<li><a>学习部</a><span class="time">2020-05-05</span></li>
+				<li><a>科协挑战杯比赛</a><span class="time">2020-06-06</span></li>
+			</ul>
+		</div>
+		<div class="news_slide">
+			<p class="newsbox_title1">公管风采</p>
+			<div class="news_picture">
+				<ul>
+					<li><img src="static/h-ui/images/gongguan.jpg"></li>
+					<li><img src="static/h-ui/images/xuanchuan.jpg"></li>
+					<li><img src="static/h-ui/images/zuzhi.jpg"></li>
+				</ul>
+				<ol id="list">
+					<li class="on">1</li>
+					<li class="on">2</li>
+					<li class="on">3</li>
+				</ol>
+				<a href="" class="left">&lt;</a>
+				<a href="" class="right">&gt;</a>
+			</div>
+		</div>
+		<footer class="footer">
+			<p>四川大学公共管理学院团委学生会</p>
+		</footer>
+	</div>
+
+</section>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script> 
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.js"></script> 
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.page.js"></script> 
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript">
+
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+
+</body>
+</html>
