@@ -31,8 +31,6 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'People', #配置admin界面
-
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

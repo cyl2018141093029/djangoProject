@@ -1,3 +1,4 @@
+from chuanshanghui.views import index  # 首页链接新增行
 """djangoProject URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -18,11 +19,10 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 admin.autodiscover()
-from chuanshanghui.views import index  #首页链接新增行
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    url(r'^$',index, name='index'),   #首页链接新增行
-    url(r'^admin/', admin.site.urls),   #首页链接新增行
+    url(r'^$', index, name='index'),   # 首页链接新增行
+    url(r'^admin/', admin.site.urls),   # 首页链接新增行
     # url(r'^admin/', admin.site.urls),
 ]
