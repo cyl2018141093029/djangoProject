@@ -1,0 +1,280 @@
+﻿<!--_meta 作为公共模版分离出去-->
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="renderer" content="webkit|ie-comp|ie-stand">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<link rel="Bookmark" href="favicon.ico" >
+<link rel="Shortcut Icon" href="favicon.ico" />
+<!--[if lt IE 9]>
+<script type="text/javascript" src="lib/html5.js"></script>
+<script type="text/javascript" src="lib/respond.min.js"></script>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="static/h-ui/css/H-ui.min.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/H-ui.admin.css" />
+<link rel="stylesheet" type="text/css" href="lib/Hui-iconfont/1.0.8/iconfont.css" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/skin/default/skin.css" id="skin" />
+<link rel="stylesheet" type="text/css" href="static/h-ui.admin/css/style.css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="http://lib.h-ui.net/DD_belatedPNG_0.0.8a-min.js" ></script>
+<script>DD_belatedPNG.fix('*');</script>
+<![endif]-->
+<!--/meta 作为公共模版分离出去-->
+
+	<title>活动管理</title>
+	<meta name="keywords" content="川上会 学生会管理新系统">
+	<meta name="description" content="针对四川大学公共管理学院团委学生会设计并开发的管理信息系统">
+</head>
+<body>
+<!--_header 作为公共模版分离出去-->
+<header class="navbar-wrapper">
+	<div class="navbar navbar-fixed-top">
+		<div class="container-fluid cl">
+			<a class="logo navbar-logo f-l mr-10" href="_blank.html"><img src="static/h-ui/images/logo.jpg"> 川上会</a>
+			<!--上方，系统logo，需不需要链接？登录页还是首页-->
+			<nav id="Hui-userbar" class="nav navbar-nav navbar-userbar hidden-xs">
+				<ul class="cl">
+					<li class="dropDown dropDown_hover"> <a href="#" class="dropDown_A"><img src="" alt="用户头像"></a><!--用户头像，来自于后台-->
+						<ul class="dropDown-menu menu radius box-shadow">
+							<li><a href="">个人信息</a></li><!--跳转至个人信息页-->
+							<li><a href="#">切换账户</a></li>
+							<li><a href="#">退出</a></li>
+						</ul>
+					</li>
+					<li id="Hui-msg"> <a href="#" title="消息"><span class="badge badge-danger">1</span><i class="Hui-iconfont" style="font-size:18px">&#xe62f;</i></a> </li>
+					<li> <a href="login.html" title="返回登陆页"><i class="Hui-iconfont" style="font-size:18px">&#xe6f7;</i></a> </li><!--返回登陆页-->
+				</ul>
+			</nav>
+		</div>
+	</div>
+</header>
+<!--/_header 作为公共模版分离出去-->
+
+<!--_menu 作为公共模版分离出去-->
+<aside class="Hui-aside">
+	<div class="menu_dropdown bk_2">
+		<dl id="menu-department">
+			<dt><i class="Hui-iconfont">&#xe613;</i> 部门管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="部门管理">部门管理</a></li>
+					<li><a href="admin-list.html" title="部门成员管理">部门成员管理</a></li>
+					<li><a href="" title="权限管理">权限管理</a> </li><!--参考管理员管理部分页面-->
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-product">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 活动管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="活动材料">活动材料</a></li>
+					<li><a href="" title="文案管理">文案管理</a></li>
+
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-article">
+			<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="article-list.html" title="资讯管理">资讯管理</a></li>
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-finance">
+			<dt><i class="Hui-iconfont">&#xe63a;</i> 资金管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="资金审核">资金审核</a></li><!--具体页面待写-->
+					<li><a href="" title="报账申请">报账申请</a> </li><!--具体页面待写-->
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-place">
+			<dt><i class="Hui-iconfont">&#xe643;</i> 场地管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="场地审核">场地审核</a></li><!--具体页面待写-->
+					<li><a href="" title="场地申请">场地申请</a> </li><!--具体页面待写-->
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-item">
+			<dt><i class="Hui-iconfont">&#xe620;</i> 物资管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="物资审核">物资审核</a></li><!--具体页面待写-->
+					<li><a href="" title="物资申请">物资申请</a> </li><!--具体页面待写-->
+				</ul>
+			</dd>
+		</dl>
+		<dl id="menu-duty">
+			<dt><i class="Hui-iconfont">&#xe622;</i> 部门对接<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
+			<dd>
+				<ul>
+					<li><a href="" title="接收任务">接受任务</a></li>
+					<li><a href="" title="发布任务">发布任务</a></li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+</aside>
+<div class="dislpayArrow hidden-xs"><a class="pngfix" href="javascript:void(0);" onClick="displaynavbar(this)"></a></div>
+<!--/_menu 作为公共模版分离出去-->
+
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i> 首页
+		<span class="c-gray en">&gt;</span>
+		资讯管理
+		<span class="c-gray en">&gt;</span>
+		活动管理
+		<span class="c-gray en">&gt;</span>
+		活动查看
+		<a class="btn btn-success radius r" style="line-height:1.6em;margin-top:3px" href="javascript:location.replace(location.href);" title="刷新" ><i class="Hui-iconfont">&#xe68f;</i></a>
+	</nav>
+	<div class="Hui-article">
+		<article class="cl pd-20">
+			<div class="w780 pb30 mb30 fr">
+			    <div class="right_info p20">
+				    <div class="detail_zy_title">
+					    <h1>群星荟萃，虚位以待<h1>
+						<p style="text-align:center;font-size:12px;color:#ccc;margin-top:10px;">发布时间:2020-06-</p>
+					</div>
+					<div class="detail_zy_c pb30 mb30">
+					    <p style="text-align:justify;">
+						    <span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"=""></span>
+							<span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"=""></span>
+					        <span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"="">
+								秋风习习，金桂飘香。9月25日下午两点半，公共管理学院210教室热闹非常，信息资源管理系师生见面会在此隆重举行。徐恩元、李桂华、赵媛、马蕾、史坤蓉、杨海娟、杨峰老师，2017级信息资源管理专业沈芝芳、郭子瑜同学，2018级信息资源管理专业全体同学参加了本次见面会。
+							</span>
+						</p>
+						<p style="text-align:justify;">
+						    <span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"=""></span>
+							<span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"=""></span>
+					        <span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"="">
+							    见面会氛围融洽、其乐融融，活动伊始，主持人介绍了到场老师和同学们，教室里充满了欢声笑语。接下来立马进入了正题，老师针对同学们提出来的问题一一答疑解惑。系主任杨峰老师就保研和考研等话题作了详细介绍，鼓励同学们多多参与竞赛、科研等实践活动，培养和提升科研能力。徐恩元老师建议同学们学以致用，把信息素养能力当成自己的看家本领，用以解决自己遇到的实际问题。马蕾老师、赵媛老师、李桂华老师、史坤蓉老师、杨海娟老师为同学们介绍了未来深造的研究方向、毕业生就业等问题。同学们了解到，专业毕业生既有在国内外著名高校升学的，又有在安永、华为、百度等知名企业工作的，也有在政府机关从事工作的，甚至还了解到有专业学长在联合国维和部队，让同学们对自己的未来规划和职业前景有了更多的想法。
+							</span>
+						</p>
+						<p style="text-align:justify;">
+						    <span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"=""></span>
+							<span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"=""></span>
+					        <span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"="">
+							    活动中，沈芝芳学姐分享了自己的保研经历和学习经验，鼓励同学们在大三多多尝试、发现新的自己，珍惜突破自己的机会，同时也要做好健康管理，保持健康生活习惯，做好未来规划，选择想要的人生。郭子瑜学长就留学问题作了详细而系统的讲解，对留学问题缺乏了解的同学们感叹受益匪浅。
+							</span>
+						</p>
+						<p style="text-align:justify;">
+						    <span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"=""></span>
+							<span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"=""></span>
+					        <span style="font-family: "Microsoft YaHei"; font-size: 14px; color: rgb(51, 51, 51); line-height: 2;" font-size:14px;color:#333333;line-height:2;"="">
+							    见面会结束后，全体师生在公共管理学院楼前合影留念。本次师生见面会的举办为同学们未来的大学生活和学习指明了方向，相信2018级的同学们通过这次活动能够明志向、鼓斗志、立德行，“信达天下，资致四方”，在信息资源管理系各位老师的指导下，2018级信息资源管理专业的全体同学将不断学习努力奋进，成长为具有深厚信息素养和扎实专业本领的新一代信资人！
+							</span>
+						</p>
+						<p>
+						    <br />
+						<p>
+						<div style="text-align:center;">
+						   <img width="550" height="413" style="font-size:12px;" alt="" src="301025318718.png"/>
+						</div>
+						<div style="text-align:right;">
+						    <span style="font-size:"px;font-family:" color:#333333;line-height:2;="">
+							</span>
+						    <span style="font-size=14px;font-family: "Microsoft YaHei"; color:#333333;line-height:2;"="">来源：公共管理学院团委学生会权益部
+							</span>
+					    </div>
+						<div style="text-align:right;">
+						    <span style="font-size=14px;font-family: "Microsoft YaHei"; color:#333333;line-height:2;"="">撰稿：胡玉零
+							</span>
+						</div>
+						<div style="text-align:right;">
+						    <span style="font-size=14px;font-family: "Microsoft YaHei"; color:#333333;line-height:2;"="">摄影：蒲瑞敏
+							</span>
+						</div>
+						<div style="text-align:right;">
+						    <span style="font-size:14px;font-family:" color:#333333;line-height:2;"="">
+							</span>
+						</div>
+						<p>
+						    </br>
+						</p>
+						<p>
+						    </br>
+						</p>
+					</div>
+				</div>
+			</div>
+		</article>
+	</div>
+</section>
+
+<!--_footer 作为公共模版分离出去-->
+<script type="text/javascript" src="lib/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="lib/layer/2.4/layer.js"></script>
+<script type="text/javascript" src="static/h-ui/js/H-ui.js"></script>
+<script type="text/javascript" src="static/h-ui.admin/js/H-ui.admin.page.js"></script>
+<!--/_footer /作为公共模版分离出去-->
+
+<!--请在下方写此页面业务相关的脚本-->
+<script type="text/javascript" src="lib/My97DatePicker/4.8/WdatePicker.js"></script>
+<script type="text/javascript" src="lib/datatables/1.10.15/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="lib/laypage/1.2/laypage.js"></script>
+<script type="text/javascript">
+$('.table-sort').dataTable({
+	"aaSorting": [[ 1, "desc" ]],//默认第几个排序
+	"bStateSave": true,//状态保存
+	"aoColumnDefs": [
+		//{"bVisible": false, "aTargets": [ 3 ]} //控制列的隐藏显示
+		{"orderable":false,"aTargets":[0,8]}// 不参与排序的列
+	]
+});
+
+/*资讯-添加*/
+function article_add(title,url,w,h){
+	var index = layer.open({
+		type: 2,
+		title: title,
+		content: url
+	});
+	layer.full(index);
+}
+/*资讯-编辑*/
+function article_edit(title,url,id,w,h){
+	var index = layer.open({
+		type: 2,
+		title: title,
+		content: url
+	});
+	layer.full(index);
+}
+/*资讯-删除*/
+function article_del(obj,id){
+	layer.confirm('确认要删除吗？',function(index){
+		$.ajax({
+			type: 'POST',
+			url: '',
+			dataType: 'json',
+			success: function(data){
+				$(obj).parents("tr").remove();
+				layer.msg('已删除!',{icon:1,time:1000});
+			},
+			error:function(data) {
+				console.log(data.msg);
+			},
+		});
+	});
+}
+
+/*资讯-发布*/
+function article_start(obj,id){
+	layer.confirm('确认要发布吗？',function(index){
+		$(obj).parents("tr").find(".td-status").html('<span class="label label-success radius">已发布</span>');
+		$(obj).remove();
+		layer.msg('已发布!',{icon: 6,time:1000});
+	});
+}
+</script>
+<!--/请在上方写此页面业务相关的脚本-->
+</body>
+</html>
