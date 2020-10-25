@@ -21,7 +21,13 @@
   <component name="ChangeListManager">
     <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html代码/product-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/money-audit.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html代码/_blank.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/_blank.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html代码/_menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/_menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html代码/admin-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/admin-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html代码/article-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/article-list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html代码/article-read.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/article-read.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html代码/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html代码/money-audit.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/money-audit.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +134,7 @@
       <workItem from="1603438063745" duration="564000" />
       <workItem from="1603438761560" duration="12264000" />
       <workItem from="1603610612053" duration="1616000" />
-      <workItem from="1603612412857" duration="624000" />
+      <workItem from="1603612412857" duration="1301000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1603183049002</created>
@@ -158,7 +164,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603374115211</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="money-audit资金审核">
+      <created>1603613248139</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603613248139</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,7 +194,8 @@
     <MESSAGE value="删除所有文件" />
     <MESSAGE value="ceshi" />
     <MESSAGE value="admin管理后台（admin.py)(未调试）" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin管理后台（admin.py)(未调试）" />
+    <MESSAGE value="money-audit资金审核" />
+    <option name="LAST_COMMIT_MESSAGE" value="money-audit资金审核" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Plugins" timestamp="1603298147528">
