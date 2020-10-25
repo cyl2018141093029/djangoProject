@@ -24,6 +24,18 @@
 </head>
 <body>
 <!--_header 作为公共模版分离出去-->
+	<h3><a href="/admin/">Admin</a></h3>
+	<ul><!--首页前后端连接尝试，用到Django的模板语法-->
+	{% for people in people %}
+		<li>{{ people.stu_name }} - {{ people.get_status_stu.sex }}</li>
+	{% endfor %}	<!--输出简单列表，展示用户名字和性别。对于设置了choices的字段，Django会提供方法来获取想要展示的值-->
+	</ul>
+	<hr/>
+	<form action="/" method="post">
+		{% csrf_token %}  <!--Django用来对提交数据安全性做的检验-->
+		{{ form }}
+		<input type="submit" value="Submit" />
+	</form>
 <header class="navbar-wrapper">
 	<div class="navbar navbar-fixed-top">
 		<div class="container-fluid cl">
