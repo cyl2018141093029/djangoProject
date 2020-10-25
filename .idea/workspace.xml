@@ -19,9 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d4ab15b1-e167-40bc-b534-f1c23cbb563b" name="Default Changelist" comment="删除所有文件">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="d4ab15b1-e167-40bc-b534-f1c23cbb563b" name="Default Changelist" comment="删除所有文件" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -122,6 +120,7 @@
       <workItem from="1603266226388" duration="279000" />
       <workItem from="1603285132419" duration="605000" />
       <workItem from="1603346302751" duration="466000" />
+      <workItem from="1603353530981" duration="42000" />
     </task>
     <servers />
   </component>
