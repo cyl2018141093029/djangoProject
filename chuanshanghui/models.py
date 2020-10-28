@@ -13,14 +13,11 @@ class People(models.Model):
     password = models.CharField(max_length=12,)
     stu_sex = models.CharField(max_length=1, choices=STU_SEX)
     stu_phone = models.CharField(max_length=11)
-    stu_qq = models.EmailField(blank=True)
-    stu_email = models.CharField(max_length=20, blank=True)
+    stu_qq = models.CharField(max_length=20, blank=True)
+    stu_email = models.EmailField(blank=True)
     stu_major = models.CharField(max_length=15)
     stu_class = models.IntegerField()
     stu_college = models.CharField(max_length=30)
-
-    def __str__(self):
-        return self.stu_sex
 
 
 class Department(models.Model):
@@ -135,7 +132,7 @@ class BorrowRecord(models.Model):
     borrow_amount = models.IntegerField(default=1)
     lent_to_dp = models.ForeignKey(to='Department', to_field='dp_num', on_delete=models.CASCADE)
     lent_for = models.CharField(max_length=200)
-    lent_time_range = models.DurationField()
+    lent_time_range = models.DurationField(null=True)
     return_time = models.DateTimeField(auto_created=True)
 
 
@@ -153,7 +150,7 @@ class CheckYesActfile(models.Model):
     # 审核活动文案
     check_num = models.IntegerField(primary_key=True)
     actfile_num = models.ForeignKey(to='ActivityFile', to_field='actfile_num', on_delete=models.CASCADE)
-    check_dp = models.CharField(max_length=2)
+    check_dpmember_num = models.ForeignKey(to="DpMembers", to_field="stu_num", on_delete=models.PROTECT, blank=True)
     check_state = models.CharField(max_length=6)
 
 
@@ -172,6 +169,6 @@ class Cooperation(models.Model):
     ddl = models.DateTimeField()
     task_details = models.CharField(max_length=200)
     task_note = models.CharField(max_length=200)
-    aappendix = models.FileField(upload_to="a_Cooperation")
-    bappendix = models.FileField(upload_to="b_Cooperation")
+    aappendix = models.FileField(upload_to="a_Cooperation", blank=True)
+    bappendix = models.FileField(upload_to="b_Cooperation", blank=True)
     task_state = models.CharField(max_length=6)

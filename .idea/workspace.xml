@@ -19,12 +19,17 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="admin管理后台（admin.py)(未调试）">
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/forms.py" afterDir="false" />
+    <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="ceshi">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/forms.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0002_activityfeedback_activityfile_applyfund_borrowrecord_checkyesactfile_classroomrecord_cooperation_dpm.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0003_auto_20201017_2314.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chuanshanghui/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/html代码/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/html代码/_header.html" beforeDir="false" afterPath="$PROJECT_DIR$/html代码/_header.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +39,6 @@
   <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
     <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Python Script" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
@@ -49,9 +47,8 @@
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="JupyterTrust" id="65825dcc-b38e-4014-b349-c924e28a5080" />
+  <component name="JupyterTrust" id="153c188e-accd-4e37-969b-26c4bd563ed3" />
   <component name="ProjectId" id="1j8MFkjbWoLOr9v4gOFO5Y8684Z" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -60,7 +57,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.django.DjangoModulesConfigurable" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RunManager">
     <configuration name="djangoProject" type="Python.DjangoServer" factoryName="Django server">
@@ -69,6 +66,7 @@
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
+        <env name="DJANGO_SETTINGS_MODULE" value="djangoProject.settings" />
       </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
@@ -101,14 +99,9 @@
       <workItem from="1603182927757" duration="18000" />
       <workItem from="1603182947202" duration="1267000" />
       <workItem from="1603269928556" duration="326000" />
-      <workItem from="1603297999992" duration="34000" />
-      <workItem from="1603298051023" duration="767000" />
-      <workItem from="1603326773671" duration="4003000" />
-      <workItem from="1603366273978" duration="5073000" />
-      <workItem from="1603371702016" duration="2170000" />
-      <workItem from="1603374846113" duration="1635000" />
-      <workItem from="1603438063745" duration="564000" />
-      <workItem from="1603438761560" duration="12264000" />
+      <workItem from="1603778971046" duration="3952000" />
+      <workItem from="1603803469656" duration="4386000" />
+      <workItem from="1603851176820" duration="446000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1603183049002</created>
@@ -131,14 +124,7 @@
       <option name="project" value="LOCAL" />
       <updated>1603183301442</updated>
     </task>
-    <task id="LOCAL-00004" summary="admin管理后台（admin.py)(未调试）">
-      <created>1603374115211</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1603374115211</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,50 +145,49 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="删除所有文件" />
     <MESSAGE value="ceshi" />
-    <MESSAGE value="admin管理后台（admin.py)(未调试）" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin管理后台（admin.py)(未调试）" />
+    <option name="LAST_COMMIT_MESSAGE" value="ceshi" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="233" y="0" key="#Plugins" timestamp="1603298147528">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="233" y="0" key="#Plugins/0.0.1280.689@0.0.1280.689" timestamp="1603298147528" />
-    <state x="321" y="80" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1603438534898">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="321" y="80" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1280.689@0.0.1280.689" timestamp="1603438534898" />
     <state x="421" y="95" key="FileChooserDialogImpl" timestamp="1603182943654">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="421" y="95" key="FileChooserDialogImpl/0.0.1280.680@0.0.1280.680" timestamp="1603182943654" />
-    <state x="57" y="43" key="MergeDialog" timestamp="1603375046735">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state width="1493" height="341" key="GridCell.Tab.0.bottom" timestamp="1603850990509">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603850990509" />
+    <state width="1493" height="341" key="GridCell.Tab.0.center" timestamp="1603850990509">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603850990509" />
+    <state width="1493" height="341" key="GridCell.Tab.0.left" timestamp="1603850990509">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603850990509" />
+    <state width="1493" height="341" key="GridCell.Tab.0.right" timestamp="1603850990509">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="341" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603850990509" />
+    <state x="242" y="100" key="MergeDialog" timestamp="1603183286110">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="242" y="100" key="MergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1603183286110" />
-    <state x="57" y="43" key="MergeDialog/0.0.1280.689@0.0.1280.689" timestamp="1603375046735" />
-    <state x="94" y="204" key="MultipleFileMergeDialog" timestamp="1603374958247">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="94" y="201" key="MultipleFileMergeDialog" timestamp="1603183286110">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="94" y="201" key="MultipleFileMergeDialog/0.0.1280.680@0.0.1280.680" timestamp="1603183286110" />
-    <state x="94" y="204" key="MultipleFileMergeDialog/0.0.1280.689@0.0.1280.689" timestamp="1603374958247" />
-    <state x="142" y="0" key="SettingsEditor" timestamp="1603369921280">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="142" y="0" key="SettingsEditor" timestamp="1603181891777">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="142" y="0" key="SettingsEditor/0.0.1280.680@0.0.1280.680" timestamp="1603181891777" />
-    <state x="142" y="0" key="SettingsEditor/0.0.1280.689@0.0.1280.689" timestamp="1603369921280" />
-    <state x="412" y="60" key="VCS.ChangeListViewerDialog" timestamp="1603374603655">
-      <screen x="0" y="0" width="1280" height="689" />
-    </state>
-    <state x="412" y="60" key="VCS.ChangeListViewerDialog/0.0.1280.689@0.0.1280.689" timestamp="1603374603655" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1603375062190">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="233" y="73" key="Vcs.Push.Dialog.v2" timestamp="1603183303078">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603183303078" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1603375062190" />
-    <state x="449" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603374892095">
-      <screen x="0" y="0" width="1280" height="689" />
+    <state x="539" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603771197494">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="449" y="253" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.680@0.0.1280.680" timestamp="1603181849743" />
-    <state x="449" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1280.689@0.0.1280.689" timestamp="1603374892095" />
+    <state x="539" y="307" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1603771197494" />
   </component>
 </project>
