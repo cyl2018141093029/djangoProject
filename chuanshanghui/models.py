@@ -1,26 +1,26 @@
+#!/usr/bin/python
+# -*- coding: utf-8 -*-
 from django.db import models
 
 
 # Create your models here.
 
 
-class People(models.Model):
-    # 用户
+class People(models.Model):  # 用户
     STU_SEX = [('F', 'female'),
                ('M', 'male')]
+    name = 'chuanshanghui.People'
+    verbose_name = '学生'
     stu_num = models.IntegerField(primary_key=True)
     stu_name = models.CharField(max_length=8, )
     password = models.CharField(max_length=12,)
     stu_sex = models.CharField(max_length=1, choices=STU_SEX)
     stu_phone = models.CharField(max_length=11)
-    stu_qq = models.EmailField(blank=True)
-    stu_email = models.CharField(max_length=20, blank=True)
+    stu_qq = models.CharField(max_length=20, blank=True)
+    stu_email = models.EmailField(blank=True)
     stu_major = models.CharField(max_length=15)
     stu_class = models.IntegerField()
     stu_college = models.CharField(max_length=30)
-
-    def __str__(self):
-        return self.stu_sex
 
 
 class Department(models.Model):
@@ -32,7 +32,7 @@ class Department(models.Model):
 
 class ActivityInfo(models.Model):
     # 活动信息
-    act_num = models.IntegerField(primary_key=True)  # 活动编号
+    act_num = models.AutoField(primary_key=True)  # 活动编号
     stu_num = models.OneToOneField(to='People', to_field='stu_num', on_delete=models.PROTECT,)  # 活动负责人
     dp_num = models.ForeignKey(to='Department', to_field='dp_num', on_delete=models.CASCADE,)  # 举办部门
     act_type = models.CharField(max_length=10)  # 活动类型
@@ -81,7 +81,7 @@ class FundRecord(models.Model):
     # 资金用于的活动编号
     fund_for_act = models.ForeignKey(to='ActivityInfo', to_field='act_num', on_delete=models.PROTECT)
     # 资金预使用事项
-    fund_for_matt = models.CharField(max_length=500)
+    fund_for_matt = models.CharField(max_length=200)
     # 资金数目
     fund_amount = models.FloatField(blank=True, null=True)
     # 报账编号
@@ -91,7 +91,7 @@ class FundRecord(models.Model):
 class Reimbursement(models.Model):
     # 预先使用资金报账
     # 报账编号
-    reim_num = models.IntegerField(primary_key=True)
+    reim_num = models.AutoField(primary_key=True)
     # 审核报账部门
     reim_to = models.ForeignKey(to='Department', to_field='dp_num', max_length=2, on_delete=models.PROTECT)
     # 发票链接
@@ -135,7 +135,7 @@ class BorrowRecord(models.Model):
     borrow_amount = models.IntegerField(default=1)
     lent_to_dp = models.ForeignKey(to='Department', to_field='dp_num', on_delete=models.CASCADE)
     lent_for = models.CharField(max_length=200)
-    lent_time_range = models.DurationField()
+    lent_time_range = models.DurationField(null=True)
     return_time = models.DateTimeField(auto_created=True)
 
 
@@ -153,7 +153,7 @@ class CheckYesActfile(models.Model):
     # 审核活动文案
     check_num = models.IntegerField(primary_key=True)
     actfile_num = models.ForeignKey(to='ActivityFile', to_field='actfile_num', on_delete=models.CASCADE)
-    check_dp = models.CharField(max_length=2)
+    check_dpmember_num = models.ForeignKey(to="DpMembers", to_field="stu_num", on_delete=models.PROTECT, blank=True)
     check_state = models.CharField(max_length=6)
 
 
@@ -161,17 +161,33 @@ class Cooperation(models.Model):
     # 部门对接
     coo_num = models.IntegerField(primary_key=True)
     taskname = models.CharField(max_length=20)
-    adp_num = models.OneToOneField(to='Department', verbose_name='任务发布部门', on_delete=models.CASCADE)
-    astu_num = models.ForeignKey(to='DpMembers', verbose_name='任务发布负责人', on_delete=models.PROTECT)
+    adp_num = models.ForeignKey(to='Department', verbose_name='任务发布部门', on_delete=models.CASCADE)
+    astu_num = models.ForeignKey(to='DpMembers', to_field='stu_num', verbose_name='任务发布负责人', on_delete=models.PROTECT)
     bdp_num = models.ForeignKey(to='Department', verbose_name='任务接收部门', related_name='Department_bdp_num',
                                 on_delete=models.CASCADE)
-    bstu_num = models.OneToOneField(to='DpMembers', verbose_name='任务接收负责人', related_name='Department_bdp_num',
+    bstu_num = models.ForeignKey(to='DpMembers', to_field='stu_num', verbose_name='任务接收负责人', related_name='Department_bdp_num',
                                     on_delete=models.PROTECT)
     contact_if = models.IntegerField()
     release_date = models.DateTimeField(auto_now_add=True)
     ddl = models.DateTimeField()
     task_details = models.CharField(max_length=200)
     task_note = models.CharField(max_length=200)
-    aappendix = models.FileField(upload_to="a_Cooperation")
-    bappendix = models.FileField(upload_to="b_Cooperation")
+    aappendix = models.FileField(upload_to="a_Cooperation", blank=True)
+    bappendix = models.FileField(upload_to="b_Cooperation", blank=True)
     task_state = models.CharField(max_length=6)
+
+
+class Goodslist(models.Model):
+
+    Goods_name = models.AutoField(primary_key=True)
+    #商品名称
+    fund_for_act = models.ForeignKey(to='ActivityInfo', to_field='act_num', on_delete=models.PROTECT)
+    Goods_price = models.FloatField(blank=True, null=True)
+    #商品单价
+    Goods_qua = models.FloatField(blank=True, null=True)
+    #商品数量
+    Goods_total = models.FloatField(blank=True, null=True)
+    #商品总价
+    beizhu = models.CharField(max_length=500)
+    #备注
+

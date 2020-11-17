@@ -1,0 +1,118 @@
+{% extends '#base_layer.html' %}
+{% block title %}添加部门成员{% endblock title %}
+{% block body %}
+<article class="cl pd-20">
+    <form action="dpmembersadd" method="post" class="form form-horizontal" id="form-admin-add">
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>姓名：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" value="" placeholder="姓名" id="stu_name" name="stu_name">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>学号：</label>
+            <div class="formControls col-xs-8 col-sm-9">
+                <input type="text" class="input-text" autocomplete="off" value="" placeholder="学号" id="stu_num" name="stu_num">
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3"><span class="c-red">*</span>性别：</label>
+            <div class="formControls col-xs-8 col-sm-9 skin-minimal">
+                <div class="radio-box">
+                    <input name="stu_sex" type="radio" id="sex-1" checked>
+                    <label for="sex-1">男</label>
+                </div>
+                <div class="radio-box">
+                    <input type="radio" id="sex-2" name="stu_sex">
+                    <label for="sex-2">女</label>
+                </div>
+            </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">专业：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
+				<select class="select" name="stu_major" size="1">
+					<option value="0">信息管理与信息系统</option>
+					<option value="1">行政管理</option>
+					<option value="2">土地管理</option>
+					<option value="3">劳动与社会保障</option>
+					<option value="4">社会工作</option>
+					<option value="5">档案学</option>
+					<option value="6">信息资源管理</option>
+				</select>
+				</span> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">部门：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
+				<select class="select" name="dp_name" size="1">
+					<option value="0">外联部</option>
+				</select>
+				</span> </div>
+        </div>
+        <div class="row cl">
+            <label class="form-label col-xs-4 col-sm-3">职位：</label>
+            <div class="formControls col-xs-8 col-sm-9"> <span class="select-box" style="width:150px;">
+				<select class="select" name="stu_post" size="1">
+					<option value="0">部长</option>
+					<option value="1">副部长</option>
+					<option value="2">干事</option>
+				</select>
+				</span> </div>
+        </div>
+
+        <div class="row cl">
+            <div class="col-xs-8 col-sm-9 col-xs-offset-4 col-sm-offset-3">
+                <input class="btn btn-primary radius" type="submit" value="&nbsp;&nbsp;提交&nbsp;&nbsp;">
+            </div>
+        </div>
+    </form>
+</article>
+
+
+<!--请在下方写此页面业务相关的脚本-->
+ {% block yewu_js %}
+<script type="text/javascript">
+    $(function(){
+        $('.skin-minimal input').iCheck({
+            checkboxClass: 'icheckbox-blue',
+            radioClass: 'iradio-blue',
+            increaseArea: '20%'
+        });
+
+        $("#form-admin-add").validate({
+            rules:{
+                stu_name:{
+                    required:true,
+                    minlength:1,
+                    maxlength:16
+                },
+                stu_sex:{
+                    required:true,
+                },
+                stu_phone:{
+                    required:true,
+                    isPhone:true,
+                },
+                stu_post:{
+                    required:true,
+                },
+                dp_name:{
+                    required:true,
+                },
+            },
+            onkeyup:false,
+            focusCleanup:true,
+            success:"valid",
+            submitHandler:function(form){
+                $(form).ajaxSubmit();
+                var index = parent.layer.getFrameIndex(window.name);
+                parent.$('.btn-refresh').click();
+                parent.layer.close(index);
+            }
+        });
+    });
+</script>
+{% endblock yewu_js %}
+<!--/请在上方写此页面业务相关的脚本-->
+{% endblock body %}
