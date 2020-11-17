@@ -1,0 +1,61 @@
+﻿{% extends '#base.html' %}
+{% block title %}首页{% endblock title %}
+{% block body %}
+<section class="Hui-article-box">
+	<nav class="breadcrumb"><i class="Hui-iconfont">&#xe67f;</i>首页</nav>
+	<div class="Hui-article">
+		<div class="newsbox">
+			<p class="newsbox_title1">活动资讯</p>
+			<ul title="活动资讯" class="newsbox_ul">
+				<li><a>创就智能秘书程序设计大赛</a><span class="time ">2020-01-01</span></li><!--title time department-->
+				<li><a>外联摄影大赛</a><span class="time">2020-02-02</span></li>
+				<li><a>组织团校</a><span class="time">2020-03-03</span></li>
+				<li><a>朝阳青志明远行动</a><span class="time">2020-04-04</span></li>
+				<li><a>学习部</a><span class="time">2020-05-05</span></li>
+				<li><a>科协挑战杯比赛</a><span class="time">2020-06-06</span></li>
+			</ul>
+		</div>
+		<div class="news_slide">
+			<p class="newsbox_title1">公管风采</p>
+			<div class="news_picture">
+				<ul>
+					<li><img src="../static/h-ui/images/gongguan.jpg"></li>
+					<li><img src="../static/h-ui/images/xuanchuan.jpg"></li>
+					<li><img src="../static/h-ui/images/zuzhi.jpg"></li>
+				</ul>
+				<ol id="list">
+					<li class="on">1</li>
+					<li class="on">2</li>
+					<li class="on">3</li>
+				</ol>
+				<a href="" class="left">&lt;</a>
+				<a href="" class="right">&gt;</a>
+			</div>
+		</div>
+        <div class="dp_intro">
+			<p class="dp_intro_title1">部门介绍</p>
+		</div>
+		<footer class="footer">
+			<p>四川大学公共管理学院团委学生会</p>
+		</footer>
+	</div>
+
+</section>
+		<footer class="footer">
+			<p>四川大学公共管理学院团委学生会</p>
+		</footer>
+	    </div>
+    </div>
+</section>
+{% endblock body %}
+
+{% block yewu_js %}
+/*个人信息-修改密码*/
+function info_changePassword(title,url,w,h){
+	layer_show(title,url,w,h);
+}
+/*个人信息-修改信息*/
+function info_changeInfo(title,url,w,h){
+    layer_show(title,url,w,h);
+}
+{% endblock yewu_js %}
