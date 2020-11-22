@@ -191,3 +191,29 @@ class Goodslist(models.Model):
     beizhu = models.CharField(max_length=500)
     #备注
 
+class BaseModel(models.Model):
+    #基类，公共字段
+    create_time = models.DateTimeField('创建时间', auto_now_add=True)
+    update_time = models.DateTimeField('更新时间', auto_now=True)
+    is_delete = models.BooleanField('逻辑删除', default=False)
+
+    class Meta:
+        # 抽象类，用于继承，迁移时不会创建
+        abstract = True
+
+class Banner(BaseModel):
+    #轮播图
+    image_url = models.URLField('轮播图url', help_text='轮播图url')
+    priority = models.IntegerField('优先级', help_text='优先级')
+    article = models.OneToOneField('ActivityInfo',on_delete=models.CASCADE)
+
+    class Meta:
+        ordering = ['priority', '-update_time']
+        db_table = "article_banner"
+        verbose_name = "轮播图"  # 在admin站点中显示的名称
+        verbose_name_plural = verbose_name  # 显示的复数名称
+
+    def __str__(self):
+        return '<轮播图{}>'.format(self.id)
+
+

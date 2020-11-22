@@ -13,24 +13,16 @@ Including another URLconf
     1. Import the include() function: from django.urls import include, path
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
-
-
+from django.conf import settings
+from django.conf.urls.static import static
 from django.contrib import admin
 from django.urls import path, include
 from chuanshanghui import views
-from django.conf.urls import url
-from django.contrib.auth import views as auth_views
 admin.autodiscover()
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.login, name="login"),  # 登录(系统默认的‘首页’)
-    path('login/', views.login, name='login'),  # 登录（用于跳转的时候）
-    path('index/', views.index),  # 首页
-    path('logout/', views.logout),  # 登出
-    path('userInfo/', views.userInfoView.as_view(), name='userInfo'),  # 个人中心
-    path('info_changePassword/', views.info_changePassword, name='changePwd'),  # 个人中心-修改密码
-    path('info_changeInfo/', views.info_changeInfo, name='changeInfo'),  # 个人中心-修改信息
     path('chuanshanghui/', include("chuanshanghui.urls", namespace='chuanshanghui')),
 
 # 活动信息
@@ -52,4 +44,4 @@ urlpatterns = [
     # url(r'^cooperation-alist/$', views.cooperation_delete),   # 删除
     # url(r'^cooperation-blist/$', views.cooperation_delete),   # 删除
     # url(r'^cooperation-read/$', views.cooperation_details)  # 展开详细信息
-]
+]+ static(settings.MEDIA_URL, document_root = settings.MEDIA_ROOT)

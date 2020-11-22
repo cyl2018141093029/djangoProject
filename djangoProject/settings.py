@@ -45,35 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'chuanshanghui',
-    'rest_framework'
 ]
-
-REST_FRAMEWORK = {
-    # 配置默认页面大小
-    'PAGE_SIZE': 10,
-    # 配置默认的分页类
-    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
-    # 配置异常处理器
-    'EXCEPTION_HANDLER': 'api.exceptions.exception_handler',
-    # 配置默认解析器
-    'DEFAULT_PARSER_CLASSES': (
-        'rest_framework.parsers.JSONParser',
-        'rest_framework.parsers.FormParser',
-        'rest_framework.parsers.MultiPartParser',
-    ),
-    # 配置默认限流类
-    'DEFAULT_THROTTLE_CLASSES': (),
-    # 配置默认授权类
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
-    # 配置默认认证类
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_jwt.authentication.JSONWebTokenAuthentication',
-        'rest_framework.authentication.SessionAuthentication',
-        'rest_framework.authentication.BasicAuthentication',
-    ),
-}
 
 
 MIDDLEWARE = [
@@ -91,7 +63,7 @@ ROOT_URLCONF = 'djangoProject.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR,'chuanshanghui/templates')],
+        'DIRS': [os.path.join(BASE_DIR,'chuanshanghui\\templates')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -117,8 +89,8 @@ DATABASES = {
         'NAME': 'student_union',
         'HOST': '127.0.0.1',
         'USER': 'root',
-        'PORT': 3309,
-        'PASSWORD': '022749@Yj',
+        'PORT': 3306,
+        'PASSWORD': '85690HHWAZQL',
 
             }
 }
@@ -162,6 +134,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_DIRS = (
-    os.path.join(BASE_DIR, 'static'),
+    os.path.join(BASE_DIR, 'chuanshanghui\\static'),
 
 )
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(BASE_DIR,'media')
+
