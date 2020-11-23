@@ -44,7 +44,8 @@ class ActivityInfo(models.Model):
     act_participant = models.CharField(max_length=20)  # 活动参与对象
     numberofp_limit = models.IntegerField()  # 人数限制
     act_appendix = models.FileField(upload_to="ActivityInfo_appendix")  # 附件路径（路经保存在数据库中，文件上传到指定目录）
-    act_image = models.ImageField(null=True)
+    act_image = models.ImageField(upload_to="ActivityInfo_image", null=True)
+
 
 
 class DpMembers(models.Model):

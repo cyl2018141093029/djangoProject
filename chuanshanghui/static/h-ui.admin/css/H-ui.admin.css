@@ -12,22 +12,43 @@ h4{line-height:30px}
 .Hui-aside{position: absolute;top:44px;bottom:0;left:0;padding-top:10px;width:199px;z-index:99;overflow:auto; background-color:rgba(238,238,238,0.98);_background-color:rgb(238,238,238);border-right: 1px solid #e5e5e5}
 .Hui-article-box{position: absolute;top:44px;right:0;bottom: 0;left:199px; overflow:hidden; z-index:1; background-color:#fff}
 	.Hui-article{position: absolute;top:34px;bottom:0;left:0; right:0;overflow:auto;z-index:1}
-.Hui-article .newsbox{width: 50%;padding-top:10px;padding-bottom:10px;padding-left:10px;float: left;display: block;}
+.Hui-article .newsbox{width: 50%;padding-top:10px;padding-bottom:10px;padding-left:10px;float: left;display: block;height: 200px;}
 .Hui-article .newsbox_ul{width:100%;display: block;}
 .Hui-article .newsbox_title1{margin-left: 10px;padding-left: 10px;background: none;color: #910000;font-size: 18px;border-left: 5px solid #910000;}
 .Hui-article .newsbox a{height: 20px;color: #6A6A6A;width: 80%;overflow: hidden;display: inline-block;}
 .Hui-article .newsbox .newsbox_ul li{width: 97%;padding-left: 3%;line-height: 22px;border-bottom: 1px dotted #9B9B9B;display: list-item;background: url("../images/biaotou.png") left center no-repeat;}
 .Hui-article .newsbox .newsbox_ul .time{float:right;color: #9A9A9A;margin: 0;padding: 0;border: 0;outline: 0;font-size: 100%;background: transparent;}
 .newsbox_ul{width: 100%;  display: block;  }
-.Hui-article .news_slide{position:relative;float:right;display: block;width:48%;padding-top:10px;padding-left: 5px;padding-bottom: 10px;}
-.Hui-article .news_picture{position: relative;margin: 50px auto;width:100%;overflow: hidden;}
-.Hui-article .news_picture ul{position: absolute;top: 0;width: 600%;left: 0;}
-.Hui-article .news_picture li{width:inherit;float: left}
-.Hui-article .news_picture .left{position: absolute;width: 20px;height: 30px;line-height: 30px;top: 50%;margin-top: -15px;background: rgba(0, 0, 0, .2);text-decoration: none;color: black;display: none;left: 0}
-.Hui-article .news_picture .right{position: absolute;width: 20px;height: 30px;line-height: 30px;top: 50%;margin-top: -15px;background: rgba(0, 0, 0, .2);text-decoration: none;color: black;display: none;right: 0;text-align: right;}
-.Hui-article .news_picture #list{float: left; background-color: #910000;color: #fff;font-size: 15px;height: 20px;line-height: 20px;width: 20px;margin-right: 1px;text-align: center;border-radius: 50%;cursor: pointer;}
-.Hui-article .news_picture #list .on {background: #C70611;color: #fff;}
-.Hui-article .news_picture img{width: 100%;display: block;}
+.Hui-article .news_slide{height:200px;position:relative;float:right;display: block;width:48%;padding-top:10px;padding-left: 5px;padding-bottom: 10px;}
+.Hui-article .news_slide .banner{margin-left: 10%;padding-left: 10px;
+    height: 80%;
+    overflow: hidden;
+    position: relative;
+    display: flex;}
+.Hui-article .banner .pic{height: 100%;}
+.Hui-article .banner .pic li{position: absolute;top: 0;right: 0;height: 100%;display: none;left: 10%}
+.Hui-article .banner .pic li a{height: 100%;display: block;width: 80%;}
+.Hui-article .banner .pic li a img{height: 100%;width:100%}
+.Hui-article .banner .btn{display: none;
+    z-index: 1;
+    align-self: center;
+    position: absolute;
+    transition: all 0.4s linear;
+    background: transparent;
+    border-color: transparent;}
+.Hui-article .banner .btn .py-arrow-left, .Hui-article .banner .btn .py-arrow-right{color:#c3c3c3;font-weight: 600;}
+.Hui-article .banner .btn .py-arrow-left:hover, .Hui-article .banner .btn .py-arrow-right:hover{color: #666666;}
+.Hui-article .banner .prev{left:0px;}
+.Hui-article .banner .next{right: 35px;}
+.Hui-article .banner:hover .btn{display:block;transition: all 0.5s linear;}
+.Hui-article .banner .tab{width: 140px;
+    height: 12px;
+    position: absolute;
+    left: 40%;
+    bottom: 20px;
+    margin-left: -49px;
+    display: flex;}
+.Hui-article .banner .tab li .active{background: #FFFFFF}
 .Hui-article .dp_intro{position:relative;float:left;display: block;width:100%;padding-top:10px;padding-left: 5px;padding-bottom: 10px;}
 .Hui-article .dp_intro .dp_intro_title1{margin-left: 10px;padding-left: 10px;background: none;color: #910000;font-size: 18px;border-left: 5px solid #910000;}
 .Hui-container{ padding:45px 0 0}
