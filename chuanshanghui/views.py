@@ -1,12 +1,15 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 # Create your views here.
-
+from django.db.models import F
 from django.shortcuts import render, redirect, HttpResponse
 from django.views import View
-from chuanshanghui.models import FundRecord, Reimbursement, DpMembers, ActivityInfo, People, Department,Goodslist, Cooperation
+from chuanshanghui.models import FundRecord, Reimbursement, DpMembers, ActivityInfo, People, Department,Goodslist, Cooperation,Banner
 from datetime import datetime, timedelta
 from django import forms
+
+from utils import constants
+from utils import json_res
 from .form import changeInfoForm, changePwdForm
 
 
@@ -15,7 +18,7 @@ name = "chuanshanghui"
 
 def login(request):#登录
     if request.session.get('is_login', None):
-        return redirect("/index/")
+        return redirect("/chuanshanghui/index/")
 
     if request.method == "GET":
         if 'usernum' in request.COOKIES and 'password' in request.COOKIES:
@@ -48,7 +51,7 @@ def login(request):#登录
             request.session['is_login'] = True
             request.session['person_num'] = person.stu_num
             request.session['person_name'] = person.stu_name
-            response = redirect('/index/')
+            response = redirect('/chuanshanghui/index/')
             if remember == 'on':
                 response.set_cookie('usernum',usernum, expires=datetime.now() + timedelta(days=14))
                 response.set_cookie('password',password,expires=datetime.now() + timedelta(days=14))
@@ -66,6 +69,13 @@ def index(request):#首页
         people = People.objects.filter(stu_num=usernum)
         person = people.last()
         return render(request,'index.html',{'person':person})
+
+class index_banner(View):
+    def get(self,request):
+        banners = Banner.objects.values('image_url','article__act_num').annotate(
+            article_title=F('article__act_name')).filter(is_delete=False)[:constants.SHOW_BANNER_COUNT]
+        data = {'banners':list(banners)}
+        return json_res.json_response(data=data)
 
 def logout(request):#退出
     if not request.session.get('is_login', None):

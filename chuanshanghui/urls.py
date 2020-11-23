@@ -6,8 +6,9 @@ import chuanshanghui.views as views
 app_name = "chuanshanghui"
 urlpatterns = [
     path('login/', views.login, name='login'),  # 登录（用于跳转的时候）
-    path('index/', views.index),  # 首页
-    path('logout/', views.logout),  # 登出
+    path('index/', views.index, name='index'),  # 首页
+    path('index_banner/',views.index_banner.as_view(), name='index_banner'),
+    path('logout/', views.logout,name='logout'),  # 登出
     path('userInfo/', views.userInfoView.as_view(), name='userInfo'),  # 个人中心
     path('info_changePassword/', views.info_changePassword, name='changePwd'),  # 个人中心-修改密码
     path('info_changeInfo/', views.info_changeInfo, name='changeInfo'),  # 个人中心-修改信息
