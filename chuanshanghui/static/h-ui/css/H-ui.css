@@ -1508,6 +1508,7 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
     .sideBox .navbar-nav li {border-bottom:1px solid #222;display:block}
     .sideBox .navbar-nav a {color:#fff;display:block;padding-left:20px;padding:10px 30px;}
     .sideBox .navbar-nav a:hover {text-decoration:none;}
+	.sideBox .navbar-nav .username{display:block;padding-left:20px;padding:10px 30px;margin-right: 10px}
     .Hui-wraper {width:auto;padding:0 10px}
     .AD-img img {width:100%;height:auto}
 	body.sideBox-open .containBox{
@@ -1541,7 +1542,7 @@ input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit
 .w-300{width:300px}
 .w-200{width:200px}
 @media (max-width: 1000px) {
-	.Hui-wraper,.wp,{ width:auto!important;padding:0 15px!important}
+	.Hui-wraper,.wp{ width:auto!important;padding:0 15px!important}
 }
 @media print{
 	.Hui-wraper{width:auto}
@@ -1711,11 +1712,11 @@ pre{white-space: pre-wrap}	/*预格式化的文本*/
 body{ background-color:#fff; color:#333}
 .bg-fff{ background-color:#fff}
 a{color:#000}
-a:hover,.active a{color:#910000}
+a:hover,.active a{color:#A60000}
 
 /*主要颜色*/
-.c-primary,.c-primary a,a.c-primary{color:#5a98de}
-.c-primary a:hover,a.c-primary:hover{ color:#5a98de}
+.c-primary,.c-primary a,a.c-primary{color:#910000}
+.c-primary a:hover,a.c-primary:hover{ color:#910000}
 /*次主色*/
 .c-secondary,.c-secondary a,a.c-secondary{color:#555}
 .c-secondary a:hover,a.c-secondary:hover{ color:#555}
@@ -2671,6 +2672,7 @@ squid.swing.jselect()
 
 /*3.4.7 表单布局*/
 label,.placeholder{font-size:14px}
+.form .message{color:#FC0300;font-weight: bold;text-align: center;}/*自定义表单显示失败信息*/
 .form legend{font-size:20px}/*表单名称*/
 .form .row{margin-top:15px}/*表单行*/
 	.form-label{display:block; color:#000}/*表单标题*/
@@ -2753,11 +2755,11 @@ a.btn:hover,a.btn:focus,a.btn:active,a.btn.active,a.btn.disabled,a.btn[disabled]
 .btn-default.active{color:#333;background-color:#c7c7c7;border-color:#c7c7c7}
 
 /*主要——主色	通常用于确定、提交、购买、支付等*/
-.btn-primary{color:#fff;background-color:#5a98de; border-color:#5a98de}
+.btn-primary{color:#fff;background-color:#C70611; border-color:#C70611}
 .btn-primary:hover,
 .btn-primary:focus,
 .btn-primary:active,
-.btn-primary.active{color:#fff;background-color:#0a6999;border-color:#0a6999}
+.btn-primary.active{color:#fff;background-color:#FF1F1F;border-color:#FF1F1F}
 
 /*次要按钮*/
 .btn-secondary{color:#fff;background-color:#3bb4f2; border-color:#3bb4f2}
@@ -2807,7 +2809,7 @@ a.btn:hover,a.btn:focus,a.btn:active,a.btn.active,a.btn.disabled,a.btn[disabled]
 .btn-primary-outline:hover,
 .btn-primary-outline:focus,
 .btn-primary-outline:active,
-.btn-primary-outline.active{color:#0a6999;background-color:transparent;border-color:#0a6999}
+.btn-primary-outline.active{color:#FF1F1F;background-color:transparent;border-color:#FF1F1F}
 
 .btn-secondary-outline{color:#3bb4f2;background-color:transparent;background-image:none;border-color:#3bb4f2}
 .btn-secondary-outline.active,.btn-secondary-outline.focus,.btn-secondary-outline:active,.btn-secondary-outline:focus,.open>.btn-secondary-outline.down-toggle{color:#fff;background-color:#3bb4f2;border-color:#3bb4f2}
@@ -5338,7 +5340,7 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus{color: #fff;text-deco
 	font-size: 80px;
 }
 .page-error .error-title .iconfont {
-	font-size:80px;
+	font-size: 200px;
 }
 .page-error .error-description {
 	font-size: 24px;
@@ -5359,3 +5361,4 @@ a.label:hover, a.label:focus, a.badge:hover, a.badge:focus{color: #fff;text-deco
 .page-help-show{}
 /*5.7 友情链接页*/
 .page-flink{}
+

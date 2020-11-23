@@ -1,20 +1,21 @@
 #!/usr/bin/python
 # -*- coding: utf-8 -*-
 from django.urls import path
-# from django.conf.urls import url
-# from rest_framework import routers
-from chuanshanghui.views import index, fundapply_check, admin_list, admin_add, fund_apply, money_add, money_list
-
-# from django.contrib import admin
+import chuanshanghui.views as views
 
 app_name = "chuanshanghui"
 urlpatterns = [
-    path('index/', index, name="index"),
-    path('fund_apply/', fund_apply, name="fund_apply"),
-    path('fund_apply/_fundapply_check', fundapply_check, name='fund_apply_state_create'),
-    path('fund_apply_state/', fundapply_check, name="fund_apply_state"),
-    path('admin_list/', admin_list, name="admin_list"),
-    path('admin_add/', admin_add, name="admin_add"),
-    path('money_add/', money_add, name='money_add'),
-    path('money_list/', money_list, name="money_list")
+    path('login/', views.login, name='login'),  # 登录（用于跳转的时候）
+    path('index/', views.index),  # 首页
+    path('logout/', views.logout),  # 登出
+    path('userInfo/', views.userInfoView.as_view(), name='userInfo'),  # 个人中心
+    path('info_changePassword/', views.info_changePassword, name='changePwd'),  # 个人中心-修改密码
+    path('info_changeInfo/', views.info_changeInfo, name='changeInfo'),  # 个人中心-修改信息
+    path('fund_apply/', views.fund_apply, name="fund_apply"),
+    path('fund_apply/_fundapply_check', views.fundapply_check, name='fund_apply_state_create'),
+    path('fund_apply_state/', views.fundapply_check, name="fund_apply_state"),
+    path('admin_list/', views.admin_list, name="admin_list"),
+    path('admin_add/', views.admin_add, name="admin_add"),
+    path('money_add/', views.money_add, name='money_add'),
+    path('money_list/', views.money_list, name="money_list")
 ]
