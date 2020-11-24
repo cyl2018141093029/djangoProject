@@ -54,7 +54,7 @@
 			<dd>
 				<ul>
 					<li><a href="" title="部门管理">部门管理</a></li>
-					<li><a href="{% url 'chuanshanghui:admin_list' %}" title="部门成员管理">部门成员管理</a></li>
+					<li><a href="{% url 'chuanshanghui:dpmembers_list' %}" title="部门成员管理">部门成员管理</a></li>
 					<li><a href="" title="权限管理">权限管理</a> </li><!--参考管理员管理部分页面-->
 				</ul>
 			</dd>
@@ -73,7 +73,7 @@
 			<dt><i class="Hui-iconfont">&#xe616;</i> 资讯管理<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a href="" title="资讯管理">资讯管理</a></li>
+					<li><a href="{% url 'chuanshanghui:article_list' %}" title="资讯管理">资讯管理</a></li>
 				</ul>
 			</dd>
 		</dl>
@@ -109,8 +109,8 @@
 			<dt><i class="Hui-iconfont">&#xe622;</i> 部门对接<i class="Hui-iconfont menu_dropdown-arrow">&#xe6d5;</i></dt>
 			<dd>
 				<ul>
-					<li><a href="/chuanshanghui/cooperation_blist/" title="接收任务">接受任务</a></li>
-					<li><a href="/chuanshanghui/cooperation_alist/" title="发布任务">发布任务</a></li>
+                    <li><a href="{% url 'chuanshanghui:cooperation_alist' %}" title="发布任务">发布任务</a></li>
+					<li><a href="{% url 'chuanshanghui:cooperation_blist' %}" title="接收任务">接受任务</a></li>
 				</ul>
 			</dd>
 		</dl>

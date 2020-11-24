@@ -30,33 +30,30 @@ class Department(models.Model):
     dp_presentetion = models.CharField(max_length=500)
  
 
-class ActivityInfo(models.Model):
-    # 活动信息
-    act_num = models.AutoField(primary_key=True)  # 活动编号
-    stu_num = models.OneToOneField(to='People', to_field='stu_num', on_delete=models.PROTECT,)  # 活动负责人
-    dp_num = models.ForeignKey(to='Department', to_field='dp_num', on_delete=models.CASCADE,)  # 举办部门
-    act_type = models.CharField(max_length=10)  # 活动类型
-    act_name = models.CharField(max_length=50)  # 活动名称
-    act_held_timerange = models.DurationField(null=True)  # 活动举办时间段
-    act_release_time = models.DateTimeField(auto_created=True)  # 活动发布时间
-    act_held_loca = models.CharField(max_length=100)  # 活动举办地点
-    act_details = models.CharField(max_length=200)  # 活动详细信息
-    act_participant = models.CharField(max_length=20)  # 活动参与对象
-    numberofp_limit = models.IntegerField()  # 人数限制
-    act_appendix = models.FileField(upload_to="ActivityInfo_appendix")  # 附件路径（路经保存在数据库中，文件上传到指定目录）
-    act_image = models.ImageField(upload_to="ActivityInfo_image", null=True)
 
+class ActivityInfo(models.Model):
+    # 活动咨询信息
+    act_num = models.AutoField(primary_key=True)  # 咨询编号
+    stu_num = models.ForeignKey(to='People', to_field='stu_num', on_delete=models.PROTECT,)  # 咨询发布人
+    dp_num = models.ForeignKey(to='Department', to_field='dp_num', on_delete=models.CASCADE,)  # 举办部门
+    act_type = models.CharField(max_length=10)  # 咨询类型
+    act_name = models.CharField(max_length=50)  # 咨询标题
+    act_held_time = models.CharField(max_length=20, null=True)  # 活动举办开始时间
+    act_held_duration = models.CharField(max_length=20, null=True)  # 活动举办开始时长
+    act_release_time = models.DateTimeField(auto_created=True)  # 活动发布时间
+    act_held_loca = models.CharField(max_length=100, null=True)  # 活动举办地点
+    act_details = models.CharField(max_length=8000)  # 活动详细信息
+    act_participant = models.CharField(max_length=20, null=True)  # 活动参与对象
+    numberofp_limit = models.CharField(max_length=20, null=True)  # 人数限制
+    act_appendix = models.FileField(upload_to="ActivityInfo_appendix", null=True)  # 附件路径（路经保存在数据库中，文件上传到指定目录）
+    act_image = models.ImageField(upload_to="ActivityInfo_image", null=True)  # 图片
 
 
 class DpMembers(models.Model):
-    # 部门成员
-    # 部门编号
-    dp_num = models.OneToOneField(to='Department', to_field='dp_num', on_delete=models.CASCADE,
-                                  )
-    # 部门成员学号
-    stu_num = models.OneToOneField(to='People', to_field='stu_num', on_delete=models.CASCADE)
-    # 部门成员职务
-    stu_post = models.CharField(max_length=6)
+    # 部门成员信息
+    dp_num = models.ForeignKey(to='Department', to_field='dp_num', on_delete=models.CASCADE)   # 部门编号
+    stu_num = models.OneToOneField(to='People', to_field='stu_num', on_delete=models.CASCADE, primary_key=True)  # 部门成员学号
+    stu_post = models.CharField(max_length=6)   # 部门成员职务
 
 
 class ActivityFeedback(models.Model):
@@ -160,22 +157,22 @@ class CheckYesActfile(models.Model):
 
 class Cooperation(models.Model):
     # 部门对接
-    coo_num = models.IntegerField(primary_key=True)
-    taskname = models.CharField(max_length=20)
-    adp_num = models.ForeignKey(to='Department', verbose_name='任务发布部门', on_delete=models.CASCADE)
-    astu_num = models.ForeignKey(to='DpMembers', to_field='stu_num', verbose_name='任务发布负责人', on_delete=models.PROTECT)
+    coo_num = models.IntegerField(primary_key=True)  # 任务编号
+    taskname = models.CharField(max_length=20)  # 任务名称
+    adp_num = models.ForeignKey(to='Department', verbose_name='任务发布部门', on_delete=models.CASCADE)  # 发布部门
+    astu_num = models.ForeignKey(to='DpMembers', to_field='stu_num', verbose_name='任务发布负责人', on_delete=models.PROTECT)   # 发布人学号
     bdp_num = models.ForeignKey(to='Department', verbose_name='任务接收部门', related_name='Department_bdp_num',
-                                on_delete=models.CASCADE)
+                                on_delete=models.CASCADE, null=True)  # 接受部门
     bstu_num = models.ForeignKey(to='DpMembers', to_field='stu_num', verbose_name='任务接收负责人', related_name='Department_bdp_num',
-                                    on_delete=models.PROTECT)
-    contact_if = models.IntegerField()
-    release_date = models.DateTimeField(auto_now_add=True)
-    ddl = models.DateTimeField()
-    task_details = models.CharField(max_length=200)
-    task_note = models.CharField(max_length=200)
-    aappendix = models.FileField(upload_to="a_Cooperation", blank=True)
-    bappendix = models.FileField(upload_to="b_Cooperation", blank=True)
-    task_state = models.CharField(max_length=6)
+                                    on_delete=models.PROTECT, blank=True, null=True)  # 接收人学号
+    contact_if = models.CharField(max_length=2)  # 是否需要联系方式
+    release_date = models.DateTimeField(auto_now_add=True)  # 发布日期
+    ddl = models.CharField(max_length=20)  # 截止日期
+    task_details = models.CharField(max_length=200)   # 任务详细信息
+    task_note = models.CharField(max_length=200, null=True)   # 备注
+    aappendix = models.FileField(upload_to="a_Cooperation", blank=True, null=True)  # 甲方部门附件
+    bappendix = models.FileField(upload_to="b_Cooperation", blank=True, null=True)  # 乙方部门附件
+    task_state = models.CharField(max_length=6)  # 任务状态
 
 
 class Goodslist(models.Model):

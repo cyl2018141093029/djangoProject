@@ -311,19 +311,34 @@ def money_list(request):
 
 
 
-# 尝试打开base
-# def base(request):
-#     return render(request, '#base.html')
+
+# 部门成员信息管理
+def dpmembers_list(request):   # 展示部门成员信息
+    all_dpm = DpMembers.objects.all()
+    return render(request, 'dpmembers_list.html', context={'all_dpm': all_dpm})   # 传递到模板中的数据是dpmembers_list
+
+def dpmembers_add(request):  # 增加新部门成员
+    if request.method == "POST":
+        stunum = request.POST.get('stu_num')
+        dpm1 = DpMembers.objects.create(stu_num=stunum)
+        dpnum = request.POST.get('dpnum')
+        dpnum = chr(dpnum)    # 传入数据库有问题
+        dpm2 = DpMembers.objects.create(dp_num_id=dpnum)
+        stupost = request.POST.get('stupost')
+        dpm3 = DpMembers.objects.create(stu_num_id=stupost)
+        return redirect('/admin-list/')
+    return render(request, 'dpmembers_add.html')
+
 
 # 活动信息展示管理
 def article_list(request):  # 展示活动信息列表
-    all_article = ActivityInfo.objects.all().order_by('-act_num')  # 获取活动信息（单表）;降序
+    all_article = ActivityInfo.objects.all().order_by('act_num')  # 获取活动信息（单表）;降序
     # dp = all_article.dp_num_id.dp_name
     # return render(request, 'article-list.html', {'all_article': all_article, 'dp':dp})  # 多表查询尝试
     return render(request, 'article_list.html', {'all_article': all_article})  # 暂时只能实现单表查询
 
 
-def articles_add(request):  # 新增
+def article_add(request):  # 新增
     if request.method == 'POST':   # post请求
         # 获取用户数据
         actname = request.POST.get('actname')  # 后一变量对应html文档name
@@ -357,27 +372,11 @@ def articles_add(request):  # 新增
                         return redirect('/article-list/')   # 重定向
     return render(request, 'article_add.html')  # get请求返回页面，页面中包含form表单
 
+
 def article_details(request):   # 详情
     article = ActivityInfo.objects.get(act_num="20001")    # 获取活动信息（单表）;降序
     return render(request, 'article-list.html', {'article': article})  # 暂时只能实现单表查询
 
-
-# 部门成员信息管理
-def dpmembers_list(request):   # 展示部门成员信息
-    all_dpm = DpMembers.objects.all()
-    return render(request, 'admin-list_new.html', context={'all_dpm': all_dpm})   # 传递到模板中的数据是dpmembers_list
-
-def dpmembers_add(request):  # 增加新部门成员
-    if request.method == "POST":
-        stunum = request.POST.get('stu_num')
-        dpm1 = DpMembers.objects.create(stu_num=stunum)
-        dpnum = request.POST.get('dpnum')
-        dpnum = chr(dpnum)    # 传入数据库有问题
-        dpm2 = DpMembers.objects.create(dp_num_id=dpnum)
-        stupost = request.POST.get('stupost')
-        dpm3 = DpMembers.objects.create(stu_num_id=stupost)
-        return redirect('/admin-list/')
-    return render(request, 'admin-add_new.html')
 
 def article_read(request):
     usernum = request.session.get('person_num')
@@ -391,9 +390,15 @@ def article_read(request):
 
 # 部门对接管理
 def cooperation_alist(request):   # 展示信息
-    all_coo = Cooperation.objects.all()
-    return render(request, 'cooperation_alist.html', context={'all_coo': all_coo})
+    all_cooa = Cooperation.objects.all()
+    return render(request, 'cooperation_alist.html', context={'all_coo': all_cooa})
 
 def cooperation_blist(request):   # 展示信息
-    # all_dpm = models.DpMembers.objects.all()
-    return render(request, 'cooperation_blist.html')
+    all_coob = Cooperation.objects.all()
+    return render(request, 'cooperation_blist.html', context={'all_coo': all_coob})
+
+def cooperation_add(request):  # 增加任务
+    return render(request, 'cooperation_add.html')
+
+def cooperation_read(request):  # 查看详情
+    return render(request, 'cooperation_read.html')

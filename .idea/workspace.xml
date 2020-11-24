@@ -19,26 +19,36 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:master" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment=" settings：&#10;1.我自己的数据库设置（密码，接口啥的）&#10;2.删除了restframework&#10;3.修改了templates和static路径，说明了是在chuanshanghui文件夹里&#10;4.添加了上传文件的文件夹media的路径&#10;&#10;django/urls.py:&#10;1.配置了media相关路径，在urlpatterns&#10; &#10;&#10;chuanshanghui/urls.py：&#10;1.将引入views的方法改成了如下（原本没有加views但我这里出现了报错，所以为了统一我加上了views，django里的urls也是这种写法）&#10; &#10;2. 将我原本放在根目录的url移动到了chuanshanghui的urls.py中&#10;&#10;models.py:&#10;1.加了两个新的class，涉及首页资讯展示，后面可能需要修改之前定好的activityinfo&#10; &#10;&#10;#base.html&amp;#base_layer.html&#10;1.修改成了正确的引入static的方式&#10;2.加入了&lt;base href=&quot;/&quot;&gt;解决之前为什么错误的引用方法下可以引入css，但正确的就无法使用，如果还是有问题再商量。&#10;3.之前整理路径的时候，有的改了，但是记不清改了哪些，就是菜单栏里的href，如果有什么错误，麻烦看一下修正">
+    <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="models11-20">
+      <change afterPath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_read.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuanshanghui/Templates/dpmembers_add.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuanshanghui/Templates/dpmembers_list.html" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0002_auto_20201122_2053.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/ActivityInfo_image/120001.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/ActivityInfo_image/120002.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/media/ActivityInfo_image/120003.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/constants.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/json_res.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0002_auto_20201123_2303.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0003_auto_20201123_2320.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0004_auto_20201123_2342.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0005_auto_20201124_0007.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/info_changeInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/info_changeInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/info_changePassword.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/info_changePassword.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/info_user.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/info_user.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/#base.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/#base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/admin-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/admin-add_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/admin-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/admin-list_new.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/article-list.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/article_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/article_add.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/article_list.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation-add.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation-read.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_alist.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_alist.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_blist.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_blist.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0004_auto_20201109_1025.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0005_goodslist.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0006_auto_20201112_2358.py" beforeDir="false" />
@@ -46,12 +56,13 @@
       <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0008_auto_20201113_0011.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0009_auto_20201113_0012.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/chuanshanghui/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/static/h-ui.admin/css/H-ui.admin.css" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/static/h-ui.admin/css/H-ui.admin.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/static/h-ui/images/xuanchuan.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/static/h-ui/images/zuzhi.jpg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/chuanshanghui/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/urls.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/chuanshanghui/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/views.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
+    </list>
+    <list id="02eef69d-69b2-4779-b582-8502102dd270" name="delete /html代码 + forms.py" comment="delete /html代码 + forms.py&#10;&#10;(cherry picked from commit 026d6369dce97882193321b9d00714064862a030)">
+      <changelist_data name="Yojandri" email="860523004@yj" date="1605618372000" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +93,7 @@
       <facet id="djangoProject/invalid/Django" />
     </ignored-facets>
   </component>
-  <component name="JupyterTrust" id="ba5c8377-fd34-4ca1-998c-cb81991a3599" />
+  <component name="JupyterTrust" id="65825dcc-b38e-4014-b349-c924e28a5080" />
   <component name="ProjectId" id="1j8MFkjbWoLOr9v4gOFO5Y8684Z" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -104,7 +115,7 @@
       <recent name="C:\Users\XM\PycharmProjects\new\chuanshanghui\utils(cyl)" />
     </key>
   </component>
-  <component name="RunManager" selected="Django Server.new">
+  <component name="RunManager" selected="Django Server.djangoProject">
     <configuration name="settings" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -244,6 +255,8 @@
       <workItem from="1605951730863" duration="7183000" />
       <workItem from="1606108361994" duration="3891000" />
       <workItem from="1606113899620" duration="14007000" />
+      <workItem from="1606134254537" duration="11167000" />
+      <workItem from="1606187544508" duration="12380000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1603183049002</created>
@@ -290,7 +303,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="master" />
+                        <option value="origin/master" />
                       </list>
                     </value>
                   </entry>
@@ -390,7 +403,9 @@
     <state x="345" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680@0.0.1280.680" timestamp="1606029649191" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/new$settings.coverage" NAME="settings Coverage Results" MODIFIED="1605672208798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/djangoProject" />
+    <SUITE FILE_PATH="coverage/manage_py$models.coverage" NAME="models Coverage Results" MODIFIED="1606123122245" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chuanshanghui" />
+    <SUITE FILE_PATH="coverage/admin_add_html$views.coverage" NAME="views Coverage Results" MODIFIED="1604902704452" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chuanshanghui" />
     <SUITE FILE_PATH="coverage/new$views.coverage" NAME="views Coverage Results" MODIFIED="1606126057527" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/chuanshanghui" />
+    <SUITE FILE_PATH="coverage/new$settings.coverage" NAME="settings Coverage Results" MODIFIED="1605672208798" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/djangoProject" />
   </component>
 </project>
