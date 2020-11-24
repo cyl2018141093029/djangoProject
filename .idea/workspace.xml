@@ -27,39 +27,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6e507d02-1401-41d1-9a34-a182be0c438b" name="Default Changelist" comment="models11-20">
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_read.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/Templates/dpmembers_add.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/Templates/dpmembers_list.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0001_initial.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0002_auto_20201123_2303.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0003_auto_20201123_2320.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0004_auto_20201123_2342.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/chuanshanghui/migrations/0005_auto_20201124_0007.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/#base.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/#base.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/admin-add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/admin-add_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/admin-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/admin-list_new.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/article-list.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/article_add.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/article_add.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/article_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/article_list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation-add.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation-read.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_alist.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_alist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_blist.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/cooperation_blist.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0004_auto_20201109_1025.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0005_goodslist.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0006_auto_20201112_2358.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0007_auto_20201113_0004.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0008_auto_20201113_0011.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/migrations/0009_auto_20201113_0012.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/models.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chuanshanghui/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/djangoProject/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/djangoProject/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/chuanshanghui/Templates/article_read.html" beforeDir="false" afterPath="$PROJECT_DIR$/chuanshanghui/Templates/article_read.html" afterDir="false" />
     </list>
     <list id="02eef69d-69b2-4779-b582-8502102dd270" name="delete /html代码 + forms.py" comment="delete /html代码 + forms.py&#10;&#10;(cherry picked from commit 026d6369dce97882193321b9d00714064862a030)">
       <changelist_data name="Yojandri" email="860523004@yj" date="1605618372000" />
@@ -256,7 +224,7 @@
       <workItem from="1606108361994" duration="3891000" />
       <workItem from="1606113899620" duration="14007000" />
       <workItem from="1606134254537" duration="11167000" />
-      <workItem from="1606187544508" duration="12380000" />
+      <workItem from="1606187544508" duration="12469000" />
     </task>
     <task id="LOCAL-00001" summary="ceshi">
       <created>1603183049002</created>
@@ -286,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1603374115211</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="models11-20">
+      <created>1606204515622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606204515622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -321,7 +296,8 @@
     <MESSAGE value="删除所有文件" />
     <MESSAGE value="ceshi" />
     <MESSAGE value="admin管理后台（admin.py)(未调试）" />
-    <option name="LAST_COMMIT_MESSAGE" value="admin管理后台（admin.py)(未调试）" />
+    <MESSAGE value="models11-20" />
+    <option name="LAST_COMMIT_MESSAGE" value="models11-20" />
   </component>
   <component name="WindowStateProjectService">
     <state x="233" y="0" key="#Plugins" timestamp="1603298147528">
@@ -387,11 +363,11 @@
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="412" y="60" key="VCS.ChangeListViewerDialog/0.0.1280.689@0.0.1280.689" timestamp="1603374603655" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1603375062190">
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2" timestamp="1606204569175">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
     <state x="233" y="73" key="Vcs.Push.Dialog.v2/0.0.1280.680@0.0.1280.680" timestamp="1603183303078" />
-    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1603375062190" />
+    <state x="233" y="74" key="Vcs.Push.Dialog.v2/0.0.1280.689@0.0.1280.689" timestamp="1606204569175" />
     <state x="449" y="256" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603374892095">
       <screen x="0" y="0" width="1280" height="689" />
     </state>
